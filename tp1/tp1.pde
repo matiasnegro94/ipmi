@@ -327,7 +327,7 @@ void draw()
   endShape(CLOSE);//Fin de la forma
 
   //SOMBRA SOBRE ROSTRO BASE MÁS CLARA
-  strokeWeight(0);
+  noStroke();
   fill(245, 245, 245);
   beginShape();//Comienzo de la forma
   vertex(515, 307);
