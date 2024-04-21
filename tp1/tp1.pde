@@ -501,19 +501,6 @@ void draw()
   strokeWeight(3);
   line(666, 196, 688, 199);
 
-  //NARIZ
-  strokeWeight(2);//Tamaño del trazo
-  line(599, 258, 595, 290);
-  strokeWeight(3);//Tamaño del trazo
-  line(595, 290, 591, 301);
-  line(591, 301, 595, 308);
-  line(595, 307, 605, 311);
-  line(605, 311, 615, 308);//mitad en X de la nariz
-  line(615, 308, 620, 300);
-  line(620, 300, 615, 290);
-  strokeWeight(2);//Tamaño del trazo
-  line(615, 290, 613, 258);
-
   //SOMBRA NARIZ
   beginShape();
   strokeWeight(0);
@@ -526,6 +513,19 @@ void draw()
   vertex(625, 297);
   vertex(621, 307);
   endShape(CLOSE);
+
+  //NARIZ
+  strokeWeight(2);//Tamaño del trazo
+  line(599, 258, 595, 290);
+  strokeWeight(3);//Tamaño del trazo
+  line(595, 290, 591, 301);
+  line(591, 301, 595, 308);
+  line(595, 307, 605, 311);
+  line(605, 311, 615, 308);//mitad en X de la nariz
+  line(615, 308, 620, 300);
+  line(620, 300, 615, 290);
+  strokeWeight(2);//Tamaño del trazo
+  line(615, 290, 613, 258);
 
   //LABIO SUPERIOR
   strokeWeight(2);//Tamaño del trazo
@@ -764,7 +764,7 @@ void draw()
   vertex(534, 238);
   endShape(CLOSE);//Fin de la forma
 
-  fill(80,15,25);
+  fill(80, 15, 25);
   beginShape();//Comienzo de la forma
   vertex(550, 189);
   vertex(569, 182);
