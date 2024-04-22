@@ -72,7 +72,8 @@ void draw()
 
   beginShape();//Comienzo de la forma
   vertex(620, 200);
-  vertex(470, 65);
+  vertex(475, 65);
+  vertex(462,49);
   vertex(452, 23);
   vertex(450, -20);
   vertex(425, -20);
@@ -95,7 +96,7 @@ void draw()
   vertex(415, 250);
   vertex(389, 244);
   vertex(391, 275);
-  vertex(425, 280);
+  vertex(425, 276);
   vertex(479, 264);
   endShape(CLOSE);//Fin de la forma
 
@@ -113,7 +114,7 @@ void draw()
   vertex(509, 370);
   vertex(460, 415);
   vertex(520, 415);
-  vertex(548, 380);
+  vertex(548, 384);
   endShape(CLOSE);//Fin de la forma
 
   beginShape();//Comienzo de la forma
