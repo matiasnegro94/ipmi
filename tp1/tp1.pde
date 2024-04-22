@@ -544,8 +544,8 @@ void draw()
   line(615, 290, 613, 258);
 
     //LABIO INFERIOR
-  strokeWeight(2);//Tamaño del trazo
-  fill(0, 0, 50);//Color de la forma
+  strokeWeight(3);//Tamaño del trazo
+  fill(0, 0, 60);//Color de la forma
   beginShape();//Comienzo de la forma
   vertex(575, 335);
   vertex(588, 346);
@@ -559,7 +559,7 @@ void draw()
   
   //LABIO SUPERIOR
   strokeWeight(2);//Tamaño del trazo
-  fill(0, 0, 50);//Color de la forma
+  fill(0, 0, 70);//Color de la forma
   beginShape();//Comienzo de la forma
   vertex(575, 335);
   vertex(605, 338); //esta es la mitad en X inferior labio superior
