@@ -543,6 +543,20 @@ void draw()
   strokeWeight(2);//Tamaño del trazo
   line(615, 290, 613, 258);
 
+    //LABIO INFERIOR
+  strokeWeight(2);//Tamaño del trazo
+  fill(0, 0, 50);//Color de la forma
+  beginShape();//Comienzo de la forma
+  vertex(575, 335);
+  vertex(588, 346);
+  vertex(598, 349);
+  vertex(602, 348); //esta es la mitad en X del labio inferior
+  vertex(612, 349);
+  vertex(620, 345);
+  vertex(625, 341);
+  vertex(635, 330);//punta derecha del labio inferior
+  endShape(CLOSE);//Fin de la forma
+  
   //LABIO SUPERIOR
   strokeWeight(2);//Tamaño del trazo
   fill(0, 0, 50);//Color de la forma
@@ -559,20 +573,6 @@ void draw()
   vertex(600, 325);
   vertex(595, 325);
   vertex(580, 333);
-  endShape(CLOSE);//Fin de la forma
-
-  //LABIO INFERIOR
-  strokeWeight(2);//Tamaño del trazo
-  fill(0, 0, 50);//Color de la forma
-  beginShape();//Comienzo de la forma
-  vertex(575, 335);
-  vertex(588, 346);
-  vertex(598, 349);
-  vertex(602, 348); //esta es la mitad en X del labio inferior
-  vertex(612, 349);
-  vertex(620, 345);
-  vertex(625, 341);
-  vertex(635, 330);//punta derecha del labio inferior
   endShape(CLOSE);//Fin de la forma
 
   //PELO BASE
