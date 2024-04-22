@@ -636,10 +636,13 @@ void draw()
   vertex(589, 13);
   vertex(574, 19);
   vertex(544, 24);
-  vertex(511, 42);
-  vertex(483, 68);
+  vertex(509, 38);
+  vertex(492, 52);
+  vertex(480, 65);
+  vertex(464, 96);
   vertex(450, 131);
-  vertex(445, 190);
+  vertex(441, 165);
+  vertex(440, 194);
   endShape(CLOSE);
 
   //PELO BRILLO
