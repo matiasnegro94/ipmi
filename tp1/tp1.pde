@@ -328,7 +328,7 @@ void draw()
 
   //SOMBRA SOBRE ROSTRO BASE MÁS CLARA
   noStroke();
-  fill(245, 245, 245);
+  fill(242, 242, 242);
   beginShape();//Comienzo de la forma
   vertex(515, 307);
   vertex(536, 331);
@@ -370,6 +370,20 @@ void draw()
   vertex(643, 355);
   vertex(625, 371);
   endShape(CLOSE);//Fin de la forma
+  
+  //LUZ SOBRE NARIZ
+  fill(210,210,240);
+  beginShape();
+  vertex(604,296);
+  vertex(600,297);
+  vertex(596,299);
+  vertex(597,302);
+  vertex(603,305);
+  vertex(607,305);
+  vertex(612,304);
+  vertex(615,299);
+  vertex(609,297);
+  endShape(CLOSE);
 
   //Sombra Flequillo
   beginShape();//Comienzo de la forma
@@ -568,6 +582,9 @@ void draw()
   vertex(480, 325);
   vertex(485, 323);
   vertex(509, 340);
+  vertex(522,348);
+  vertex(545,358);
+  vertex(547,351);
   vertex(548, 350);
   vertex(515, 310);
   vertex(527, 303);
@@ -584,8 +601,10 @@ void draw()
   vertex(687, 303);
   vertex(695, 307);
   vertex(675, 345);
+  vertex(675,356);
+  vertex(698,337);
   vertex(710, 320);
-  vertex(730, 295);
+  vertex(728, 295);
   vertex(750, 190);
   vertex(740, 120);
   vertex(715, 65);
@@ -672,8 +691,9 @@ void draw()
 
   //Pelo Brillo Lateral Derecho 2
   beginShape();//Comienzo de la forma
-  vertex(693, 324);
-  vertex(721, 296);
+  vertex(683, 342);
+  vertex(708,315);
+  vertex(719, 296);
   vertex(733, 222);
   vertex(734, 174);
   vertex(724, 138);
@@ -681,11 +701,13 @@ void draw()
   vertex(721, 141);
   vertex(730, 171);
   vertex(730, 222);
-  vertex(720, 291);
+  vertex(721,265);
+  vertex(718, 291);
+  vertex(707,311);
   endShape(CLOSE);//Fin de la forma
 
   //Pelo Brillo Lateral Izquierdo 1
-  fill(120, 120, 190);//Color de la forma
+  fill(70, 70, 115);//Color de la forma
   beginShape();//Comienzo de la forma
   vertex(522, 308);
   vertex(494, 245);
@@ -695,6 +717,7 @@ void draw()
   endShape(CLOSE);//Fin de la forma
 
   //Pelo Brillo Lateral Izquierdo 2
+  fill(80, 80, 115);//Color de la forma
   beginShape();//Comienzo de la forma
   vertex(515, 313);//puntita inferior derecha
   vertex(485, 247);
@@ -704,14 +727,24 @@ void draw()
   endShape(CLOSE);//Fin de la forma
 
   //Pelo Brillo Lateral Izquierdo 3
+  fill(120, 120, 190);//Color de la forma
   beginShape();//Comienzo de la forma
   vertex(505, 318);//puntita inferior derecha
-  vertex(473, 247);
-  vertex(463, 150);//puntita suprior
-  vertex(468, 247);//puntita medio izquierda
-
+  vertex(475, 247);
+  vertex(463, 150);//puntita superior
+  vertex(471, 247);//puntita medio izquierda
   vertex(500, 320);//puntita inferior izquierda
   endShape(CLOSE);//Fin de la forma
+  
+  //Pelo Brillo Lateral Izquierdo 4
+  fill(70, 70, 115);//Color de la forma
+  beginShape();
+  vertex(539,347);
+  vertex(523,335);
+  vertex(503,319);
+  vertex(494,321);
+  vertex(517,337);  
+  endShape(CLOSE);
 
   //FONDO DE UZUMAKI
   strokeWeight(5);//Tamaño del trazo
@@ -809,8 +842,8 @@ void draw()
   line(533, 246, 504, 224);//fin primera vuelta
   strokeWeight(7);
   line(504, 224, 486, 189);
-  line(486, 189, 481, 151);
-  line(481, 151, 498, 107);
+  line(486, 189, 483, 151);
+  line(483, 151, 498, 107);
   line(498, 107, 518, 84);
   line(518, 84, 554, 71);
   line(554, 71, 576, 79);
@@ -900,15 +933,15 @@ void draw()
   //SOMBRA DETRÁS DE OJO UZUMAKI MÁS CLARA
   beginShape();//Comienzo de la forma
   fill(18, 18, 18);
-  vertex(499, 219);
+  vertex(509, 229);
   vertex(511, 236);
   vertex(536, 248);
   vertex(564, 246);
   vertex(578, 238);
   vertex(586, 224);
-  vertex(569, 226);
+  vertex(569, 215);
   vertex(522, 232);
-  vertex(507, 222);
+  vertex(517, 222);
   vertex(521, 218);
   endShape(CLOSE);//Fin de la forma
 
