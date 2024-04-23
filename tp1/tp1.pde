@@ -754,7 +754,7 @@ void draw()
 
   //FONDO DE UZUMAKI
   strokeWeight(5);//Tamaño del trazo
-  fill(150, 60, 75);//Fondo de la forma
+  fill(140, 60, 75);//Fondo de la forma
   beginShape();//Comienzo de la forma
   curveVertex(530, 254);
   curveVertex(500, 232);
@@ -774,7 +774,7 @@ void draw()
 
   //SOMBRA SOBRE FONDO UZUMAKI
   strokeWeight(0);
-  fill(145, 40, 60);
+  fill(115, 40, 60);
   beginShape();//Comienzo de la forma
   vertex(563, 237);
   vertex(599, 219);
@@ -789,10 +789,11 @@ void draw()
   vertex(536, 247);
   endShape(CLOSE);//Fin de la forma
 
-  fill(120, 30, 45);
+  fill(60, 30, 45);
   beginShape();//Comienzo de la forma
   vertex(566, 211);
-  vertex(593, 175);
+  vertex(577,205);
+  vertex(593, 175);  
   vertex(596, 142);
   vertex(585, 109);
   vertex(564, 85);
@@ -803,7 +804,7 @@ void draw()
   vertex(534, 238);
   endShape(CLOSE);//Fin de la forma
 
-  fill(80, 15, 25);
+  fill(30, 15, 25);
   beginShape();//Comienzo de la forma
   vertex(550, 189);
   vertex(569, 182);
@@ -817,7 +818,7 @@ void draw()
   vertex(548, 196);
   endShape(CLOSE);//Fin de la forma
 
-  fill(30, 5, 10);
+  fill(10, 5, 10);
   beginShape();//Comienzo de la forma
   vertex(552, 172);
   vertex(562, 154);
