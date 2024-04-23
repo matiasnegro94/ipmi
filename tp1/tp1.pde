@@ -73,7 +73,7 @@ void draw()
   beginShape();//Comienzo de la forma
   vertex(620, 200);
   vertex(475, 65);
-  vertex(462,49);
+  vertex(462, 49);
   vertex(452, 23);
   vertex(450, -20);
   vertex(425, -20);
@@ -406,10 +406,11 @@ void draw()
   vertex(634, 244);
   vertex(647, 249);
   vertex(664, 249);
+  vertex(674, 243);
   vertex(685, 231);
   vertex(688, 222);
   vertex(682, 221);
-  vertex(669, 237);
+  vertex(673, 237);
   vertex(661, 242);
   vertex(646, 242);
   endShape(CLOSE);//Fin de la forma
@@ -544,7 +545,7 @@ void draw()
   strokeWeight(2);//Tamaño del trazo
   line(615, 290, 613, 258);
 
-    //LABIO INFERIOR
+  //LABIO INFERIOR
   strokeWeight(3);//Tamaño del trazo
   fill(0, 0, 60);//Color de la forma
   beginShape();//Comienzo de la forma
@@ -557,7 +558,7 @@ void draw()
   vertex(625, 341);
   vertex(635, 330);//punta derecha del labio inferior
   endShape(CLOSE);//Fin de la forma
-  
+
   //LABIO SUPERIOR
   strokeWeight(2);//Tamaño del trazo
   fill(0, 0, 70);//Color de la forma
@@ -792,8 +793,8 @@ void draw()
   fill(60, 30, 45);
   beginShape();//Comienzo de la forma
   vertex(566, 211);
-  vertex(577,205);
-  vertex(593, 175);  
+  vertex(577, 205);
+  vertex(593, 175);
   vertex(596, 142);
   vertex(585, 109);
   vertex(564, 85);
