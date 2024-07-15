@@ -9,10 +9,6 @@ float transitionTime = 0.5; // Duración de la transición en segundos
 float transitionProgress = 0.0; // Progreso de la transición
 boolean mouseOverSquare = false; // Estado para saber si el ratón está sobre un cuadrado
 
-boolean toggleSize = false; // Estado para alternar el tamaño de los cuadrados
-float animationSpeed = 0.05; // Velocidad de la animación de cambio de tamaño
-float squareSizeFactor = 1.0; // Factor de escala para el tamaño de los cuadrados
-
 void setup() {
   size(800, 400); // Tamaño del lienzo
   noStroke();
@@ -45,22 +41,8 @@ void draw() {
       borderColorIndex = (borderColorIndex + 1) % borderColors.length;
       fillColorIndex = (fillColorIndex + 1) % fillColors.length;
     }
-
-    // Animar el tamaño de los cuadrados
-    if (toggleSize) {
-      squareSizeFactor -= animationSpeed;
-      if (squareSizeFactor <= 0.2) {
-        toggleSize = false;
-      }
-    } else {
-      squareSizeFactor += animationSpeed;
-      if (squareSizeFactor >= 1.0) {
-        toggleSize = true;
-      }
-    }
   } else {
     transitionProgress = 0.0; // Reiniciar el progreso de la transición
-    squareSizeFactor = 1.0; // Reiniciar el factor de tamaño
   }
   
   float startX = width / 2 + padding / 2; // Punto de inicio en el eje X, a la derecha de la imagen
@@ -69,16 +51,14 @@ void draw() {
       float x = startX + i * (squareSize + padding);
       float y = padding + j * (squareSize + padding);
       
-      float currentSquareSize = (mouseOverSquare && isMouseOverSquare(x, y, squareSize)) ? 100 : squareSize * squareSizeFactor;
-      drawSquare(x, y, currentSquareSize, false, currentBorderColor, currentFillColor);
+      drawSquare(x, y, squareSize, false, currentBorderColor, currentFillColor);
     }
   }
   
   // Cuadrado del centro
   float centerX = width * 3 / 4 - squareSize / 2; // Colocar el cuadrado central a la derecha
   float centerY = height / 2 - squareSize / 2;
-  float centerSquareSize = (mouseOverSquare && isMouseOverSquare(centerX, centerY, squareSize)) ? 2 : squareSize * squareSizeFactor;
-  drawSquare(centerX, centerY, centerSquareSize, true, currentBorderColor, currentFillColor);
+  drawSquare(centerX, centerY, squareSize, true, currentBorderColor, currentFillColor);
 }
 
 // Función que NO retorna un valor
@@ -155,8 +135,6 @@ void resetVariables() {
   fillColorIndex = 0;
   transitionProgress = 0.0;
   mouseOverSquare = false;
-  toggleSize = false;
-  squareSizeFactor = 1.0;
 }
 
 // Ejemplo de uso de funciones matemáticas
