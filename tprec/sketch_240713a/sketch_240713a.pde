@@ -66,6 +66,10 @@ void drawSquare(float x, float y, float size, boolean isCenter, color borderColo
   stroke(borderColor);
   strokeWeight(20); // Grosor de los bordes
   
+  // Usar random para variar el color de relleno solo si el mouse está sobre el cuadrado
+  if (mouseOverSquare) {
+    fillColor += int(random(-10, 10));
+  }
   fill(fillColor);
   rect(x, y, size, size);
   
@@ -135,15 +139,4 @@ void resetVariables() {
   fillColorIndex = 0;
   transitionProgress = 0.0;
   mouseOverSquare = false;
-}
-
-// Ejemplo de uso de funciones matemáticas
-void exampleMathFunctions() {
-  float d = dist(0, 0, width, height); // Calcular la distancia entre dos puntos
-  float m = map(mouseX, 0, width, 0, 255); // Mapear el valor de mouseX a un rango de 0 a 255
-  float r = random(0, 100); // Generar un número aleatorio entre 0 y 100
-  
-  println("Distancia: " + d);
-  println("Mapeo: " + m);
-  println("Aleatorio: " + r);
 }
